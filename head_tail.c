@@ -1,28 +1,7 @@
-/* Assignment 1
-Iva Sekulic - 21309706
+/* 
+Iva Sekulic
  Summary of Code
  Usage: head_tail head|tail [-n number] [-h] [-V] [-e] [-o] [FILE]
-
- This code is longer than usual due to the fact that it can implement multiple options and there are also a several error checks.
- If the user inputs head or tail as the first argument, it will execute the program accordingly.
- However, if the user doesn't input anyting the program will default to head.
- The default setting can easily be changed, by chaning 'head = 1' to 'tail = 1'.
- The code reads a command line with multiple options
- n K to print K lines.
- V to display version info (name, student number, and email),
- h to display help message, showing all possible options,
- e | o displays even | odd lines only.
-
- This code can implement both, even and odd lines. It is the user's choice.
- The code works completely and if no options or arguments are entered, only the program name,
- the program will default to printing first ten lines of stdin.
-
- However, apart from buffer overflow, the code will not work if the user inputs random arguments,
- as well as no file name at the end. It will just print an error message stating that it does not recognise
- the arguments and cannot open the file. If a file name is specified as the last argument and there is jargon
- before the filename, it will just go into default mode and print first ten lines as usual.
-
- If the user enters the optional argument -n 0, it will print the whole file or from the stdin until CTRL + D is entered.
  */
 #include <stdio.h>
 #include <stdlib.h>
